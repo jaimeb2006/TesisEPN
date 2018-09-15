@@ -1,4 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
 <app-navbar></app-navbar>
 <div class="container mt-3">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </div>
+
+  
+  <ul>
+    <li class="text" *ngFor="let item of items | async">
+      {{item.nombre}}
+    </li>
+  </ul>
